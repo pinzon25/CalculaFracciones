@@ -19,7 +19,7 @@ Luego hay que mostrar el resultado de la fraccion.
  */
 public class CalculaFracciones {
 
-    private int nominador, denominador;
+    private int nominador, denominador, minimoComunmultiple = 0;
     CalculaFracciones r = null;
 
     public CalculaFracciones() {
@@ -50,7 +50,7 @@ public class CalculaFracciones {
 
     public CalculaFracciones sumaFracciones(CalculaFracciones nuevaFraccion) {
 
-        int nominadorSuma = 0, minimoComunmultiple = 0, nuevoNominador = 0;
+        int nominadorSuma = 0, nuevoNominador = 0;
 
         if (denominador == nuevaFraccion.getDenominador()) {
             nominadorSuma = (nominador + nuevaFraccion.getNominador());
@@ -74,7 +74,7 @@ public class CalculaFracciones {
 
     public CalculaFracciones restaFracciones(CalculaFracciones nuevaFraccion) {
 
-        int nominadorResta = 0, minimoComunmultiple = 0, nuevoNominador1 = 0, nuevoNominador2 = 0;
+        int nominadorResta = 0, nuevoNominador1 = 0, nuevoNominador2 = 0;
 
         if (denominador == nuevaFraccion.getDenominador()) {
             nominadorResta = (nominador - nuevaFraccion.getNominador());
